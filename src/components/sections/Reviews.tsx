@@ -3,8 +3,8 @@ import Testimonial from '../shared/Testimonial';
 
 const Reviews = () => {
   return (
-    <section id='reviews' className="scroll-mt-40">
-      <div className="container mx-auto">
+    <section id="reviews" className="scroll-mt-40">
+      <div className="container mx-auto px-4 lg:px-20">
         <div className="-m-2.5 max-w-13.5 ">
           <img src="/image/Stars.png" alt="" />
         </div>
@@ -12,9 +12,9 @@ const Reviews = () => {
           <h3 className="text-[38px] py-2.5">What Our Clients Say</h3>
           <div className="flex gap-37">
             <p>
-              Read the success stories and heartfelt testimonials from our valued
-              clients. Discover why they chose Eastatein for their real eastate
-              needs.
+              Read the success stories and heartfelt testimonials from our
+              valued clients. Discover why they chose Eastatein for their real
+              eastate needs.
             </p>
             <button className="btn-dark p-[14px_20px] bg-gray-10 text-nowrap ">
               View All Testimonials

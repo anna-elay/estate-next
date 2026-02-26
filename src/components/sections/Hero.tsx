@@ -40,7 +40,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="p-2.5  bg-absolute-black border-4 border-gray-10 inner-border-1">
+        <div className=" p-2.5  bg-absolute-black border-4 border-gray-10 inner-border-1">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 bg-absolute-black">
             <div className="relative ">
               <div className=" flex  justify-center  gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px] ">
@@ -62,7 +62,7 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  <h5 className="text-sm lg:text-base font-semibold">
+                  <h5 className="text-sm font-semibold ">
                     Find Your Dream Home
                   </h5>
                 </div>
@@ -88,7 +88,7 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  <h5 className="text-sm lg:text-base font-semibold">
+                  <h5 className="text-sm font-semibold ">
                     Unlock Property Value
                   </h5>
                 </div>
@@ -115,7 +115,7 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  <h5 className="text-sm lg:text-base font-semibold">
+                  <h5 className="text-sm font-semibold ">
                     Efforless Property Management
                   </h5>
                 </div>
@@ -142,7 +142,7 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  <h5 className="text-sm lg:text-base font-semibold">
+                  <h5 className="text-sm  font-semibold">
                     Smart Investments, Informed Decisions
                   </h5>
                 </div>

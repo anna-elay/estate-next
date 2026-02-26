@@ -4,7 +4,7 @@ import GalleryCart from '../shared/GalleryCart';
 const Details = () => {
   return (
     <section id="detail" className="scroll-mt-10">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4 lg:px-20">
         <div className="py-22.5">
           <div className="-m-2.5 max-w-13.5 ">
             <img src="/image/Stars.png" alt="" />

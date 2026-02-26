@@ -7,18 +7,20 @@ import {
 
 const OurClients = () => {
   return (
-    <section id='client' className="scroll-mt-25">
-      <div className="pt-22.5 pb-30 container mx-auto">
-        <div className="flex flex-col items-start justify-center w-1/2 pb-15px">
+    <section id="client" className="scroll-mt-25">
+      <div className="pt-22.5 pb-30 container mx-auto px-4 lg:px-20">
+        <div className="flex flex-col items-start justify-center lg:w-1/2 pb-15px">
           <img className="-m-2.5 pb-1.5" src="/image/Stars.png" alt="Stars" />
           <h2 className="text-[38px] pb-2.5">Our Valued Clients</h2>
           <p>
-            At Estatein, we have had the privelege of working with a diverse range
-            of clients across various industries. Here are some of the clients
-            we've had the pleasure of serving.
+            At Estatein, we have had the privelege of working with a diverse
+            range of clients across various industries. Here are some of the
+            clients we've had the pleasure of serving.
           </p>
         </div>
-        <div className="flex gap-10 pt-15 pb-10">
+
+
+        <div className="flex gap-10 pt-15 pb-10 ">
           <div className="border-4 border-gray-10 inner-border-1 rounded-xl p-10">
             <div className="flex justify-between">
               <div>
@@ -46,12 +48,14 @@ const OurClients = () => {
             <div className="p-6 border border-gray-15 rounded-xl">
               <p>What Thay Said </p>
               <span>
-                Eastatein's expertise in finding the perfect office space for you
-                expanding operation was invaluable. They truly understand our
-                business needs.
+                Eastatein's expertise in finding the perfect office space for
+                you expanding operation was invaluable. They truly understand
+                our business needs.
               </span>
             </div>
           </div>
+
+
           <div className="border-4 border-gray-10 inner-border-1 rounded-xl p-10">
             <div className="flex justify-between">
               <div>
@@ -80,10 +84,12 @@ const OurClients = () => {
               <p>What Thay Said</p>
               <span>
                 Estatein's ability to identify prime retail locations helped us
-                expand our brand presence. They are trusted partner in our growth.
+                expand our brand presence. They are trusted partner in our
+                growth.
               </span>
             </div>
           </div>
+          
         </div>
         <div className="flex justify-between pt-10 border-t border-gray-15">
           <div className="flex gap-0.5">

@@ -3,9 +3,9 @@ import QuestionCart from "../shared/QuestionCart";
 
 const Questions = () => {
   return (
-    <section id='question' className="scroll-mt-25">
+    <section id="question" className="scroll-mt-25">
       <div className="py-22.5">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 lg:px-20">
           <div className="-m-2.5 max-w-13.5 ">
             <img src="/image/Stars.png" alt="" />
           </div>
