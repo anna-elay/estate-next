@@ -2,19 +2,46 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #141414;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-urbanist-sans);
+}
+
+@theme {
+  --color-absolute-white: rgba(255, 255, 255, 1);
+  --color-absolute-black: rgba(0, 0, 0, 1);
+  --color-yellow-star: rgba(255, 259, 0, 1);
+  --color-purple-60: rgba(112, 59, 247, 1);
+  --color-purple-65: rgba(130, 84, 248, 1);
+  --color-purple-70: rgba(148, 108, 249, 1);
+  --color-purple-75: rgba(166, 133, 250, 1);
+  --color-purple-90: rgba(219, 206, 253, 1);
+  --color-purple-95: rgba(237, 231, 254, 1);
+  --color-purple-97: rgba(244, 240, 254, 1);
+  --color-purple-99: rgba(251, 250, 255, 1);
+  --color-white-90: rgba(228, 228, 231, 1);
+  --color-white-95: rgba(241, 241, 243, 1);
+  --color-white-97: rgba(247, 247, 248, 1);
+  --color-white-99: rgba(252, 252, 253, 1);
+  --color-button-xmark: var(--gray-15);
+   --color-gray-08: rgba(20, 20, 20, 1);
+  --color-gray-09: rgba(20, 20, 20, 1);
+  --color-gray-10: rgba(26, 26, 26, 1);
+  --color-gray-15: rgba(38, 38, 38, 1);
+  --color-gray-20: rgba(51, 51, 51, 1);
+  --color-gray-30: rgba(77, 77, 77, 1);
+  --color-gray-40: rgba(102, 102, 102, 1);
+  --color-gray-50: rgba(128, 128, 128, 1);
+  --color-gray-60: rgba(153, 153, 153, 1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #141414;
     --foreground: #ededed;
   }
 }
@@ -24,3 +51,50 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+p {
+  font-size: 16px;
+  color: var(--color-gray-60);
+  font-weight: 500;
+}
+
+.btn-dark {
+  color: var(--absolute-white);
+  border-radius: 10px;
+  border: 1px solid var(--color-gray-15);
+  cursor: pointer;
+  background-color: var(--color-gray-09);
+  /* padding: 14px 24px; */
+}
+
+.btn-purple {
+ background-color: var(--color-purple-60);
+ border-radius: 10px;
+ color: var(--absolute-white);
+ cursor: pointer;
+}
+
+.btn-gray {
+  background-color: var(--color-gray-10);
+  border: 1px solid var(--color-gray-15);
+  border-radius: 28px;
+  cursor: pointer;
+  padding: 6px 14px;
+}
+.sub-bg-color {
+  background-color: var(--color-gray-10);
+  border:1px solid var(--color-gray-15);
+  color: var(--color-absolute-white);
+  border-radius: 8px;
+  line-height: 150%;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
+
+.inner-border-1 {
+  box-shadow: inset 0 0 0 1px var(--color-gray-15);
+  
+}
+
