@@ -6,7 +6,7 @@ const SecondSection = () => {
   return (
     <section id="categories" className='scroll-mt-20'>
       <div className="py-30 px-20">
-        <div className="flex flex-col items-start justify-center w-1/2 pb-15px">
+        <div className="flex flex-col items-start justify-center  pb-15px">
           <img className="-m-2.5 pb-1.5" src="/image/Stars.png" alt="Stars" />
           <h2 className="text-[38px] pb-2.5">
             Discover a World of Possibilities

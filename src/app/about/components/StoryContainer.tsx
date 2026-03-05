@@ -15,7 +15,7 @@ const StoryContainer = () => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 border-4 border-gray-10 inner-border-1 p-6.5 rounded-xl">
           <div>
-            <div className="border-r border-gray-15 ">
+            <div className="border-b border-gray-15 lg:border-b-0 pb-5 lg:pb-0">
               <div className="flex items-center gap-2.5  ">
                 <div className="w-15 h-15 border border-purple-60 rounded-full p-4 flex items-center justify-center">
                   <img src="/image/Star.svg" alt="" />
@@ -28,7 +28,8 @@ const StoryContainer = () => {
               </p>
             </div>
           </div>
-          <div>
+
+          <div className="lg:pl-5  lg:border-l border-b lg:border-b-0 py-5 lg:py-0 border-gray-15">
             <div className="flex items-center gap-2.5">
               <div className="w-15 h-15 border border-purple-60 rounded-full p-4 flex items-center justify-center">
                 <img src="/image/ExcellentHat.svg" alt="" />
@@ -40,7 +41,9 @@ const StoryContainer = () => {
               the services we provide.
             </p>
           </div>
-          <div className=" border-r border-gray-15 border-t">
+          <div className="lg:my-5 lg:border border-gray-15 h-px"></div>
+          <div className="lg:my-5 lg:border border-gray-15 h-px"></div>
+          <div className=" lg:border-r border-b lg:border-b-0 py-5 lg:py-0 border-gray-15 ">
             <div className="flex items-center gap-2.5">
               <div className="w-15 h-15 border border-purple-60 rounded-full p-4 flex items-center justify-center">
                 <img src="/image/ClientIcon.svg" alt="" />
@@ -52,7 +55,8 @@ const StoryContainer = () => {
               listen,understand.
             </p>
           </div>
-          <div className=" border-t border-gray-15">
+
+          <div className="lg:pl-5 pt-5 lg:pt-0">
             <div className="flex items-center gap-2.5">
               <div className="w-15 h-15 border border-purple-60 rounded-full p-4 flex items-center justify-center">
                 <img src="/image/Star.svg" alt="" />

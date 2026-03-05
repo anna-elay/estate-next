@@ -1,37 +1,32 @@
-import { StarIcon } from "@heroicons/react/16/solid";
 
-const Testimonial = () => {
+import { TestimonialData } from "@/data/testimonials";
+import { StarIcon } from "@heroicons/react/16/solid";
+interface TestimonialProps {
+  testimonial: TestimonialData;
+}
+
+const Testimonial = ({testimonial}: TestimonialProps) => {
+    const { rating, title, text, author, location, avatar } = testimonial;
   return (
     <div className="grid gap-5 pt-15 pb-10">
       <div className="bg-gray-08 p-10 border border-gray-15 rounded-xl max-w-107">
         <div className="flex gap-2">
-          <div className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center">
-            <StarIcon className="size-5 text-yellow-star" />
-          </div>
-          <div className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center">
-            <StarIcon className="size-5 text-yellow-star" />
-          </div>
-          <div className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center">
-            <StarIcon className="size-5 text-yellow-star" />
-          </div>
-          <div className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center">
-            <StarIcon className="size-5 text-yellow-star" />
-          </div>
-          <div className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center">
-            <StarIcon className="size-5 text-yellow-star" />
-          </div>
+          {[...Array(rating)].map((_, i) => (
+            <div
+              key={i}
+              className="w-9.5 h-9 bg-gray-10 border border-gray-15 rounded-full flex justify-center items-center"
+            >
+              <StarIcon className="size-5 text-yellow-star" />
+            </div>
+          ))}
         </div>
-        <h4 className="text-xl pt-7.5 pb-2.5">Exeptional Service</h4>
-        <p className="text-absolute-white! pb-7.5 ">
-          Eastatein provided us with top-notch service. They helpedus sell our
-          property quickly and at great price. We couldn't be happier with the
-          results.{" "}
-        </p>
+        <h4 className="text-xl pt-7.5 pb-2.5">{title}</h4>
+        <p className="text-absolute-white! pb-7.5 ">{text}</p>
         <div className="flex gap-2.5">
-          <img src="/image/Emelie.svg" alt="" />
+          <img src={avatar} alt={author} />
           <div>
-            <div>Emilia Tomson</div>
-            <p>USA, Florida</p>
+            <div>{author}</div>
+            <p>{location}</p>
           </div>
         </div>
       </div>

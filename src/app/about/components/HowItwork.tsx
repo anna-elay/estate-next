@@ -56,8 +56,8 @@ const HowItwork = () => {
               <div className="border-l border-purple-60 p-[14px_26px]">
                 {step.number}
               </div>
-              <div className="p-10">
-                <h4 className="text-xl">{step.title}</h4>
+              <div className="p-10 g-border">
+                <h4 className="text-xl pb-4">{step.title}</h4>
                 <p>{step.text}</p>
               </div>
             </div>
