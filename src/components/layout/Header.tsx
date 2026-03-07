@@ -35,12 +35,9 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
       className={`fixed left-0 right-0 z-40 transition-all duration-300 ${isBannerVisible ? "top-15 " : "top-0"}`}
     >
       {isOpen && (
-        <div
-          className="fixed inset-0 bg-gray-08/50 backdrop-blur-sm z-30"
-          onClick={() => setIsOpen(false)}
-        />
+        <div className=" liquid-glass" onClick={() => setIsOpen(false)} />
       )}
-      <div className="bg-gray-15/95 relative z-40">
+      <div className="header-content">
         <div className="container mx-auto flex justify-between p-5.5 ">
           <Link href={"/"} className="logo flex  items-center ">
             <Image

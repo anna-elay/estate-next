@@ -106,3 +106,44 @@ p {
   background: linear-gradient(135deg, rgb(50, 24, 50) 0%, #000 40%)
    linear-gradient(135deg, rgb(108, 45, 125) 0%, #444 40%) border-box;
 }
+.liquid-glass {
+  @apply fixed inset-0 z-30;
+  background: transparent;
+}
+
+.liquid-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  height: 200%;
+  backdrop-filter: blur(10px) saturate(180%);
+  mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 50%, transparent 100%);
+  background: rgba(31, 41, 55, 0.3);
+  pointer-events: none;
+}
+
+.liquid-glass > * {
+  position: relative;
+  z-index: 10;
+}
+/* fixed inset-0 bg-gray-08/30 backdrop-blur-[10px] z-30 */
+
+.header-content {
+  position: relative;
+  z-index: 40;
+}
+
+/* Слой жидкого стекла */
+.header-content::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  height: calc(100% + 50px);
+  backdrop-filter: blur(10px) saturate(200%);
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  background: rgba(17, 24, 39, 0.4);
+  pointer-events: none;
+  z-index: -1;
+}
