@@ -1,7 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Footer = () => {
+  const [email, setEmail] = useState('')
+  const [error, setError] = useState('')
+  const [touched, setTouched] = useState(false); 
+
+  const validateEmail = (email: string) =>{
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+  }
+   const handleSubmit = () => {
+     setTouched(true);
+     if (!email.trim()) {
+       setError("Email can not be empty");
+       return;
+     }
+     if (!validateEmail(email)) {
+       setError("Enter the corect email");
+       return;
+     }
+     setError("");
+     alert("Email send");
+     // очистка
+     setEmail("");
+     setTouched(false);
+   };
+   const handleChange = (e: any) => {
+    setEmail(e.target.value)
+    if(touched) {
+      setError('')
+    }
+   };
+   const handleKeyDown = (e: any) => {
+    if(e.key === 'Enter') {
+      e.preventDefault();
+      handleSubmit();
+    }
+   }
+ const inputBorderClass = error ? "border-red-500" : "border-gray-15";
   return (
     <div className="">
       <div className=" bg-cover w-full h-full  bg-[url(/image/Group1.png)] lg:p-[60px_80px] border-gray-15 border ">
@@ -30,7 +68,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 p-4">
           <div>
             <Link href={"/"}>
-              <div className="flex ">
+              <div className="flex items-center gap-1 ">
                 <Image
                   src="/image/Symbol.svg"
                   alt="logo"
@@ -43,11 +81,34 @@ const Footer = () => {
                 </span>
               </div>
             </Link>
-            <input type="email" placeholder="Enter Your Email" />
-            <img src="./image/FlyIcon.svg" alt="" />
+            <div className="relative w-full pt-5">
+              <input
+                type="email"
+                value={email}
+                onChange={handleChange}
+                onKeyDown={handleKeyDown}
+                placeholder="Enter Your Email"
+                className={`w-full outline-none hover:border focus:border focus:border-purple-60 text-absolute-white border border-gray-15 rounded-lg p-4 lg:p-[14px_20px ${inputBorderClass}`}
+                aria-invalid={!!(error && touched)}
+                aria-describedby="email-error"
+              />
+              <button
+                onClick={handleSubmit}
+                aria-label="Email send"
+                className={`absolute right-4 top-12 -translate-y-1/2 transition-all ${
+                  email.trim() ? "h-7 w-7" : "h-6 w-6"
+                }`}
+              >
+                <img
+                  className={`${email.trim() ? "h-7 w-7 bg-purple-60/15 rounded-lg" : "h-6 w-6"}`}
+                  src="./image/FlyIcon.svg"
+                  alt=""
+                />
+              </button>
+            </div>
           </div>
 
-          <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-10 lg:gap-17">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-10 lg:gap-17">
             <div className="border-b lg:border-b-0 border-gray-15 md:border-l md:pl-5 lg:border-l-0 lg:pl-0">
               <p>Home</p>
               <div className="flex flex-col gap-2 lg:gap-4 lg:pt-6">

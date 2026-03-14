@@ -2,11 +2,11 @@ import React from 'react'
 
 const SmartContainer = () => {
   return (
-    <div className=" container mx-auto flex gap-12.5 pt-22.5">
-      <div className="w-1/2 ">
+    <div className=" container mx-auto flex flex-col lg:flex-row px-4 gap-12.5 pt-22.5">
+      <div className="lg:w-1/2 ">
         <div className="flex flex-col items-start justify-center  pb-10 ">
           <img className="-m-2.5 pb-1.5" src="/image/Stars.png" alt="Stars" />
-          <h2 className="text-[38px] pb-2.5">
+          <h2 className=" text-[28px] lg:text-[38px] pb-2.5">
             Smart Investments, Informed Decisions
           </h2>
           <p>
@@ -30,7 +30,7 @@ const SmartContainer = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 w-2/2">
+      <div className="lg:grid grid-cols-2 w-2/2 pb-20 lg:pb-0">
         <div className="p-10  border-10 border-gray-10 inner-border-1 rounded-[10px] ">
           <div className="flex items-center gap-4 pb-5">
             <div className="w-15 h-15  cursor-pointer flex items-center justify-center">

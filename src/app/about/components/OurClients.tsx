@@ -55,7 +55,7 @@ const OurClients = () => {
         <div className="relative pt-15 pb-10">
           <div className="overflow-hidden">
             <div
-              className="flex transition-transform duration-300 ease-in-out"
+              className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {partners.map((partner, index) => (

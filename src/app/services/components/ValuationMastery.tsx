@@ -6,8 +6,8 @@ const ValuationMastery = () => {
     <section id='valuation' className='scroll-mt-35'>
       <>
         <div className="relative bg-linear-to-r from-gray-15 border-b border-gray-15 ">
-          <div className="pt-25 pb-32.5 px-20">
-            <h2 className="text-[38px] pb-2.5">
+          <div className="py-12.5 px-4 lg:pt-25 lg:pb-32.5 lg:px-20">
+            <h2 className=" text-[28px] lg:text-[38px] pb-2.5">
               Elevate Your Real Estate Experience
             </h2>
             <p>

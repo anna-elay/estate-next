@@ -1,11 +1,12 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Grid from "../shared/Grid";
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <div>
       <section id="hero" className="scroll-mt-38">
-        <div className="flex flex-col-reverse sm:flex-row">
+        <div className="2xl:container 2xlg:mx-auto flex flex-col-reverse sm:flex-row">
           <div className="relative bg-neutral-950 p-4 pt-10  md:p-8 xl:p-16 xs:w-1/2 sm:w-1/2">
             <div>
               <div>
@@ -42,86 +43,91 @@ const Hero = () => {
         </div>
         <div className=" p-2.5  bg-absolute-black border-4 border-gray-10 inner-border-1">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 bg-absolute-black">
-            <div className="relative ">
-              <div className=" flex  justify-center  gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px] ">
-                <ArrowUpRightIcon className=" absolute top-2 right-2 w-6 h-6 text-gray-30 " />
-                <div className="flex flex-col items-center gap-4">
-                  <div className="relative w-15 h-15 mx-auto cursor-pointer">
-                    <div className="absolute inset-0 flex items-center justify-center z-10">
-                      <img
-                        className=" size-6 "
-                        src="/image/IconHome.png"
-                        alt=""
-                      />
+            <Link href="/#detail">
+              <div className="relative ">
+                <div className=" flex  justify-center  gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px] ">
+                  <ArrowUpRightIcon className=" absolute top-2 right-2 w-6 h-6 text-gray-30 " />
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="relative w-15 h-15 mx-auto cursor-pointer">
+                      <div className="absolute inset-0 flex items-center justify-center z-10">
+                        <img
+                          className=" size-6 "
+                          src="/image/IconHome.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300">
+                        <img
+                          className="w-full h-full "
+                          src="/image/TwistedContainer.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
-                    <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300">
-                      <img
-                        className="w-full h-full "
-                        src="/image/TwistedContainer.png"
-                        alt=""
-                      />
-                    </div>
+                    <h5 className="text-sm lg:font-semibold ">
+                      Find Your Dream Home
+                    </h5>
                   </div>
-                  <h5 className="text-sm font-semibold ">
-                    Find Your Dream Home
-                  </h5>
                 </div>
               </div>
-            </div>
+            </Link>
 
-            <div className="relative ">
-              <div className=" flex justify-center gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px]">
-                <div className="  flex flex-col items-center gap-4">
-                  <div className="relative w-15 h-15 mx-auto cursor-pointer">
-                    <div className="absolute inset-0 flex items-center justify-center z-10">
-                      <img
-                        className=" size-6 "
-                        src="/image/IconPhoto.png"
-                        alt=""
-                      />
+            <Link href="/properties">
+              <div className="relative ">
+                <div className=" flex justify-center gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px]">
+                  <div className="  flex flex-col items-center gap-4">
+                    <div className="relative w-15 h-15 mx-auto cursor-pointer">
+                      <div className="absolute inset-0 flex items-center justify-center z-10">
+                        <img
+                          className=" size-6 "
+                          src="/image/IconPhoto.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300 ">
+                        <img
+                          className="w-full h-full "
+                          src="/image/TwistedContainer.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
-                    <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300 ">
-                      <img
-                        className="w-full h-full "
-                        src="/image/TwistedContainer.png"
-                        alt=""
-                      />
-                    </div>
+                    <h5 className="text-sm lg:font-semibold ">
+                      Unlock Property Value
+                    </h5>
                   </div>
-                  <h5 className="text-sm font-semibold ">
-                    Unlock Property Value
-                  </h5>
+                  <ArrowUpRightIcon className="absolute top-2 right-2 w-6 h-6 text-gray-30 " />
                 </div>
-                <ArrowUpRightIcon className="absolute top-2 right-2 w-6 h-6 text-gray-30 " />
               </div>
-            </div>
-
-            <div className="relative ">
-              <div className="flex justify-center gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px]">
-                <div className="flex flex-col items-center gap-4">
-                  <div className="relative w-15 h-15 mx-auto cursor-pointer">
-                    <div className="absolute inset-0 flex items-center justify-center z-10">
-                      <img
-                        className=" size-6 "
-                        src="/image/IconFlat.png"
-                        alt=""
-                      />
+            </Link>
+            <Link href="/services/#management">
+              <div className="relative ">
+                <div className="flex justify-center gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px]">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="relative w-15 h-15 mx-auto cursor-pointer">
+                      <div className="absolute inset-0 flex items-center justify-center z-10">
+                        <img
+                          className=" size-6 "
+                          src="/image/IconFlat.png"
+                          alt=""
+                        />
+                      </div>
+                      <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300">
+                        <img
+                          className="w-full h-full "
+                          src="/image/TwistedContainer.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
-                    <div className="absolute inset-0 z-11 hover:animate-spin transition-all duration-300">
-                      <img
-                        className="w-full h-full "
-                        src="/image/TwistedContainer.png"
-                        alt=""
-                      />
-                    </div>
+                    <h5 className="text-sm lg:font-semibold ">
+                      Efforless Property Management
+                    </h5>
                   </div>
-                  <h5 className="text-sm font-semibold ">
-                    Efforless Property Management
-                  </h5>
+                  <ArrowUpRightIcon className="absolute top-2 right-2 w-6 h-6 text-gray-30 " />
                 </div>
-                <ArrowUpRightIcon className="absolute top-2 right-2 w-6 h-6 text-gray-30 " />
               </div>
-            </div>
+            </Link>
 
             <div className="relative ">
               <div className="flex justify-center gap-10 p-5 border-gray-15 border-solid border bg-gray-10 rounded-[10px]">
@@ -142,7 +148,7 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  <h5 className="text-sm  font-semibold">
+                  <h5 className="text-sm  lg:font-semibold">
                     Smart Investments, Informed Decisions
                   </h5>
                 </div>
