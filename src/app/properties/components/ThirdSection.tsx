@@ -44,7 +44,7 @@ const BUDGETS = [
   "$700k - $1M",
   "$1M+",
 ];
-const CONTACT_METHODS = ["Phone", "Email"];
+
 
 const ThirdSection = () => {
   const {

@@ -65,7 +65,7 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className={`${pathname === "/contact" ? "btn-purple p-4" : "hover:bg-gray-08/20 transition-colors p-[14px_20px] rounded-[10px]"}`}
+              className={`${pathname === "/contact" ? "bg-purple-60  transition-colors p-[14px_20px] rounded-[10px]" : "hover:bg-gray-08/20 transition-colors p-[14px_20px] rounded-[10px]"}`}
             >
               Contact Us
             </Link>
@@ -107,7 +107,7 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
             <Link
               href="/contact"
               onClick={() => setIsOpen(!isOpen)}
-              className={`flex items-stretch px-4 py-3 transition-colors ${
+              className={` ${
                 pathname === "/contact"
                   ? "bg-purple-60"
                   : "hover:bg-purple-60/20"
