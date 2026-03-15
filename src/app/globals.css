@@ -101,9 +101,6 @@ p {
   box-shadow: none;
 }
 .g-border {
-  /* width: 300px;
-  height: 300px; */
-  /* padding: 10px; */
   border: 5px solid transparent;
   border-radius: 0 10px 10px 10px;
   background: linear-gradient(135deg, rgb(50, 24, 50) 0%, #000 40%)
@@ -152,3 +149,4 @@ p {
   pointer-events: none;
   z-index: -1;
 }
+
