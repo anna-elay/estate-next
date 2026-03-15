@@ -132,13 +132,11 @@ const ThirdSection = () => {
           )}
         </div>
 
-        {/* Выпадающий список */}
-        {/* Выпадающий список с эффектом жидкого стекла */}
         {isOpen && (
           <div className="absolute z-50 mt-1 w-full">
-            {/* Основной контейнер с эффектом */}
+          
             <div className="relative rounded-md shadow-lg overflow-hidden">
-              {/* Стеклянный слой (размытие) - работает как в рабочем примере */}
+          
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
@@ -152,7 +150,7 @@ const ThirdSection = () => {
                 }}
               />
 
-              {/* Контент (опции) */}
+  
               <div className="relative z-10 border border-gray-15 rounded-md bg-gray-08/50">
                 {options.map((option) => (
                   <div
@@ -176,7 +174,6 @@ const ThirdSection = () => {
 
   return (
     <div className="px-5 lg:px-20 pb-20 lg:pb-30">
-      {/* Заголовок */}
       <div className="flex flex-col items-start justify-center pb-15px">
         <img className="-m-2.5 pb-1.5" src="/image/Stars.png" alt="Stars" />
         <h2 className="text-[38px] pb-2.5">Let's Make It Happen</h2>
@@ -316,7 +313,6 @@ const ThirdSection = () => {
                   placeholder="Enter Your Number"
                 />
                 <PhoneIcon className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" />
-                {/* Точка: фиолетовая если поле заполнено, пустая если нет */}
                 <div
                   className={`w-2.5 h-2.5 rounded-full absolute right-4 top-1/2 -translate-y-1/2 transition-colors
         ${watch("phone") ? "bg-purple-60" : "border border-purple-60 bg-transparent"}`}

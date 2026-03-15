@@ -59,7 +59,7 @@ const Footer = () => {
               </p>
             </div>
             <button className=" btn-purple  w-full lg:w-fit  py-3.5 lg:p-[14px_20px]  text-nowrap ">
-              Explore Properties
+              <Link href={'/properties'}>Explore Properties</Link>
             </button>
           </div>
         </div>

@@ -24,10 +24,10 @@ const Hero = () => {
               </div>
               <div className="xl:py-15 flex flex-col sm:flex-row gap-5 pt-3.5 md:pt-6  ">
                 <button className="btn-dark  py-3.5 sm:p-[14px_20px]   grow md:grow-0 ">
-                  Learn More
+                  <Link href={'/about/#work'}>Learn More</Link>
                 </button>
                 <button className="btn-purple py-3.5 sm:p-[14px_20px] grow md:grow-0">
-                  Browse Properties
+                  <Link href={'/properties'}>Browse Properties</Link>
                 </button>
               </div>
             </div>

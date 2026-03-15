@@ -35,5 +35,14 @@ export const testimonials: TestimonialData[] = [
     location: "USA, Nevada",
     avatar: "/image/John.svg",
   },
+  {
+    id: "4",
+    rating: 5,
+    title: "Trusted Advisors",
+    text: "The Estatein team guided us through the entire buying process. Their knowledge and commitment to our needs were impressive. Thank you for your support!",
+    author: " Mans",
+    location: "USA",
+    avatar: "/image/David.svg",
+  },
 ];
 

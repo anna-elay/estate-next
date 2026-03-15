@@ -175,65 +175,66 @@ const FirstSection = () => {
     const value = watch(name) as string;
 
     return (
-      <div className="relative">
-        <div className="flex items-center justify-between p-3 border-8 border-gray-10 inner-border-1 rounded-lg bg-gray-08">
-          <div className="flex items-center flex-1">
-            <Icon className="w-5 h-5 text-gray-60" />
-            <input
-              {...register(name)}
-              readOnly
-              value={value || ""}
-              onClick={() => setIsOpen(!isOpen)}
-              className={`focus:outline-none pl-1 bg-transparent w-full cursor-pointer ${
-                errors[name] && touchedFields[name] ? "text-red-500" : ""
-              }`}
-              placeholder={placeholder}
-            />
-          </div>
-          <button
-            type="button"
-            onClick={() => setIsOpen(!isOpen)}
-            className="w-7 h-7 bg-gray-10 rounded-full flex items-center justify-center"
-          >
-            <ChevronDownIcon
-              className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
-            />
-          </button>
-        </div>
-
-        {/* Выпадающий список */}
-        {isOpen && (
-          <div className="absolute z-50 mt-1 w-full">
-            <div className="relative rounded-md shadow-lg overflow-hidden">
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  backdropFilter: "blur(10px) saturate(180%)",
-                  WebkitBackdropFilter: "blur(10px) saturate(180%)",
-                  background: "rgba(14, 16, 21, 0.4)",
-                  maskImage:
-                    "linear-gradient(to bottom, black 0%, black 85%, transparent 100%)",
-                  WebkitMaskImage:
-                    "linear-gradient(to bottom, black 0%, black 85%, transparent 100%)",
-                }}
+      <div className="lg:bg-gray-10 lg:w-65 lg:rounded-lg">
+        <div className="relative ">
+          <div className="flex items-center justify-between  p-3 border-8 border-gray-10 inner-border-1 rounded-lg bg-gray-08">
+            <div className="flex items-center flex-1">
+              <Icon className="w-5 h-5 text-gray-60" />
+              <input
+                {...register(name)}
+                readOnly
+                value={value || ""}
+                onClick={() => setIsOpen(!isOpen)}
+                className={`focus:outline-none pl-1 bg-transparent w-full cursor-pointer ${
+                  errors[name] && touchedFields[name] ? "text-red-500" : ""
+                }`}
+                placeholder={placeholder}
               />
-              <div className="relative z-10 border border-gray-15 rounded-md bg-gray-08/50">
-                {options.map((option) => (
-                  <div
-                    key={option}
-                    className="p-3 hover:bg-gray-10/80 cursor-pointer transition-colors"
-                    onClick={() => {
-                      setValue(name, option, { shouldValidate: true });
-                      setIsOpen(false);
-                    }}
-                  >
-                    {option}
-                  </div>
-                ))}
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-7 h-7 bg-gray-10 rounded-full flex items-center justify-center"
+            >
+              <ChevronDownIcon
+                className={`w-4 h-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+          </div>
+          {/* Выпадающий список */}
+          {isOpen && (
+            <div className="absolute z-50 mt-1 w-full">
+              <div className="relative rounded-md shadow-lg overflow-hidden">
+                <div
+                  className="absolute inset-0 pointer-events-none"
+                  style={{
+                    backdropFilter: "blur(10px) saturate(180%)",
+                    WebkitBackdropFilter: "blur(10px) saturate(180%)",
+                    background: "rgba(14, 16, 21, 0.4)",
+                    maskImage:
+                      "linear-gradient(to bottom, black 0%, black 85%, transparent 100%)",
+                    WebkitMaskImage:
+                      "linear-gradient(to bottom, black 0%, black 85%, transparent 100%)",
+                  }}
+                />
+                <div className="relative z-10 border border-gray-15 rounded-md bg-gray-08/50">
+                  {options.map((option) => (
+                    <div
+                      key={option}
+                      className="p-3 hover:bg-gray-10/80 cursor-pointer transition-colors"
+                      onClick={() => {
+                        setValue(name, option, { shouldValidate: true });
+                        setIsOpen(false);
+                      }}
+                    >
+                      {option}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     );
   };
