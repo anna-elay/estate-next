@@ -109,8 +109,8 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
               onClick={() => setIsOpen(!isOpen)}
               className={` ${
                 pathname === "/contact"
-                  ? "bg-purple-60"
-                  : "hover:bg-purple-60/20"
+                  ? "bg-purple-60 py-3.5 w-full! p-4 mt-4"
+                  : "hover:bg-purple-60/20 py-3.5 w-full p-4 "
               }`}
             >
               Contact Us

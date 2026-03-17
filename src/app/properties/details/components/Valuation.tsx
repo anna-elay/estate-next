@@ -50,7 +50,7 @@ const Valuation = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="flex flex-col md:flex-row justify-between pt-20 pb-10 gap-4">
+      <div className="flex flex-col md:flex-row justify-between pt-7 pb-10 gap-4">
         <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
           <h4 className="text-[20px] md:text-[24px]">Seaside Serenity Villa</h4>
           <div className="flex items-center">

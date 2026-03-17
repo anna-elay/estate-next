@@ -1,8 +1,9 @@
+import Link from 'next/link';
 import React from 'react'
 
 const ValueContainer = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 lg:pb-20 pb-10">
       <section id="property" className="scroll-mt-25">
         <div className="flex flex-col items-start justify-center  pb-10 lg:pb-15px pt-20 lg:pt-22.5">
           <img className="-m-2.5 pb-1.5" src="/image/Stars.png" alt="Stars" />
@@ -140,9 +141,11 @@ const ValueContainer = () => {
             <h3 className="text-[24px] font-bold">
               Unlock the Value of You Property Today
             </h3>
-            <button className="btn-dark p-[14px_20px] rounded-lg text-nowrap">
-              Learn More
-            </button>
+            <Link href={'/properties'}>
+              <button className="btn-dark p-[14px_20px] rounded-lg text-nowrap">
+                Learn More
+              </button>
+            </Link>
           </div>
           <p>
             Ready to unlock the true value of your property? Explore our
@@ -264,9 +267,11 @@ const ValueContainer = () => {
               <h3 className="text-[24px] font-bold">
                 Experience Efforless Property Management
               </h3>
-              <button className="btn-dark p-[14px_20px] rounded-lg text-nowrap">
-                Learn More
-              </button>
+              <Link href={'/about'}>
+                <button className="btn-dark p-[14px_20px] rounded-lg text-nowrap">
+                  Learn More
+                </button>
+              </Link>
             </div>
             <p>
               Ready to experiens hassle-free property management? Explore our
