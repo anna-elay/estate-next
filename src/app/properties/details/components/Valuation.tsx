@@ -23,7 +23,6 @@ const images = [
 
 const Valuation = () => {
   const [startIndex, setStartIndex] = useState(0);
-
   const nextSlide = () => {
     setStartIndex((prev) => (prev + 1) % images.length);
   };
@@ -63,7 +62,6 @@ const Valuation = () => {
           <span className="text-xl md:text-2xl">$1,250,000</span>
         </div>
       </div>
-
       <div className="bg-gray-10 border border-gray-15 rounded-xl p-4 md:p-10 relative pb-25">
         <div className="hidden md:block">
           {/* 9 маленьких картинок сверху */}

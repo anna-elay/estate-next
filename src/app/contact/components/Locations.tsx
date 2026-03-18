@@ -15,13 +15,13 @@ const Locations = () => {
         </p>
       </div>
       <div className="bg-gray-10 p-2.5 inline-flex justify-between gap-2.5 rounded-xl ">
-        <button className="btn-gray active hover:bg-gray-09! min-w-30 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
+        <button className="btn-gray active hover:bg-gray-09! min-w-25 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
           All
         </button>
-        <button className="btn-gray hover:bg-gray-09! min-w-30 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
+        <button className="btn-gray hover:bg-gray-09! min-w-25 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
           Regional
         </button>
-        <button className="btn-gray hover:bg-gray-09! min-w-30 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
+        <button className="btn-gray hover:bg-gray-09! min-w-25 lg:min-w-40! min-h-12.5 lg:min-h-16 rounded-[10px]!">
           Internetional
         </button>
       </div>

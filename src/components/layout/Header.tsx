@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { Bars3BottomRightIcon, XMarkIcon  } from "@heroicons/react/24/solid";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -28,7 +28,7 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
     if (isActive) {
       return "btn-dark p-[14px_20px] ";
     }
-    return "p-[14px_20px] rounded-[10px] hover:bg-gray-08/20 transition-colors";
+    return "p-[14px_20px] rounded-[10px] hover:bg-gray-15/50 transition-colors m-1";
   };
   return (
     <header
@@ -65,7 +65,7 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className={`${pathname === "/contact" ? "bg-purple-60  transition-colors p-[14px_20px] rounded-[10px]" : "hover:bg-gray-08/20 transition-colors p-[14px_20px] rounded-[10px]"}`}
+              className={`${pathname === "/contact" ? "bg-purple-60  transition-colors p-[13px_20px] rounded-[10px]" : "hover:bg-gray-15/50 transition-colors p-[13px_20px] rounded-[10px]"}`}
             >
               Contact Us
             </Link>
@@ -80,10 +80,11 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
               <Bars3BottomRightIcon className="h-6 w-6" />
             )}
           </button>
+          {/* мобильная версия  */}
           <div
             className={`
-          absolute top-full left-0 w-60 h-65 bg-gray-15 shadow-lg
-          transform transition-all duration-300 ease-in-out z-50
+          absolute top-full left-0 w-full h-67 bg-gray-15 shadow-lg
+          transform transition-all duration-300 ease-in-out z-50 rounded-lg 
           ${isOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}
         `}
           >
@@ -93,10 +94,10 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
                   <Link
                     href={item.href}
                     onClick={() => setIsOpen(!isOpen)}
-                    className={`flex items-stretch px-4 py-3  hover:bg-gray-20/20 transition-colors  ${
+                    className={`flex items-stretch px-4 py-3  hover:bg-gray-20/50 transition-colors  ${
                       isActiveLink(item.href)
                         ? "bg-gray-08 border-y border-gray-20"
-                        : "hover:bg-gray-30/20"
+                        : "hover:bg-gray-30/50 cursor-pointer"
                     }`}
                   >
                     {item.name}
@@ -109,8 +110,8 @@ const Header = ({ isBannerVisible }: HeaderProps) => {
               onClick={() => setIsOpen(!isOpen)}
               className={` ${
                 pathname === "/contact"
-                  ? "bg-purple-60 py-3.5 w-full! p-4 mt-4"
-                  : "hover:bg-purple-60/20 py-3.5 w-full p-4 "
+                  ? "bg-purple-60 py-3.5 flex items-stretch p-4 "
+                  : "focus:bg-purple-60/50 transition-colors py-3.5 w-full p-4 cursor-pointer mt-4"
               }`}
             >
               Contact Us

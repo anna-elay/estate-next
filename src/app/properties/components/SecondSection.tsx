@@ -73,7 +73,6 @@ const SecondSection = ({ properties }: GalleryProp) => {
             ))}
           </div>
         </div>
-
         <div className="flex justify-between">
           <div className="flex gap-0.5">
             <div>{currentPage + 1}</div>

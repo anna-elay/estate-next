@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div>
       <section id="hero" className="scroll-mt-38">
-        <div className="2xl:container 2xlg:mx-auto flex flex-col-reverse sm:flex-row">
+        <div className="xl:container xl:mx-auto flex flex-col-reverse sm:flex-row">
           <div className="relative bg-neutral-950 p-4 pt-10  md:p-8 xl:p-16 xs:w-1/2 sm:w-1/2">
             <div>
               <div>
@@ -24,10 +24,10 @@ const Hero = () => {
               </div>
               <div className="xl:py-15 flex flex-col sm:flex-row gap-5 pt-3.5 md:pt-6  ">
                 <button className="btn-dark  py-3.5 sm:p-[14px_20px]   grow md:grow-0 ">
-                  <Link href={'/about/#work'}>Learn More</Link>
+                  <Link href={"/about/#work"}>Learn More</Link>
                 </button>
                 <button className="btn-purple py-3.5 sm:p-[14px_20px] grow md:grow-0">
-                  <Link href={'/properties'}>Browse Properties</Link>
+                  <Link href={"/properties"}>Browse Properties</Link>
                 </button>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className=" p-2.5  bg-absolute-black border-4 border-gray-10 inner-border-1">
+        <div className="xl:container xl:mx-auto p-2.5  bg-absolute-black border-4 border-gray-10 inner-border-1">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 bg-absolute-black">
             <Link href="/#detail">
               <div className="relative ">
