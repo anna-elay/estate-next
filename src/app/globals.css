@@ -100,16 +100,9 @@ p {
   box-shadow: none;
 }
 
-/* .g-border {
-  border: 5px solid transparent;
-  border-radius: 0 10px 10px 10px;
-  background: linear-gradient(135deg, rgb(50, 24, 50) 0%, #000 40%)
-   linear-gradient(135deg, rgb(108, 45, 125) 0%, #444 40%) border-box;
-} */
 .g-border {
   width: 405px;
   height: 220px;
-  /* padding: 10px; */
   background:
     linear-gradient(135deg, rgba(112, 59, 247, 0.5) 0%, rgb(20, 20, 20) 10%) padding-box,
     linear-gradient(135deg, rgb(112, 59, 247) 0%, rgb(38, 38, 38) 20%) border-box;

@@ -181,11 +181,11 @@ function Strategic() {
               />
               <p className="text-nowrap text-gray-300">
                 I agree with{" "}
-                <a href="#" className="text-purple-400 hover:underline">
+                <a href="#" className="text-purple-60 hover:underline">
                   Terms of Use
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-purple-400 hover:underline">
+                <a href="#" className="text-purple-60 hover:underline">
                   Privacy Policy
                 </a>
               </p>
@@ -204,7 +204,7 @@ function Strategic() {
               ${
                 isSubmitting
                   ? "bg-gray-500 cursor-wait"
-                  : "bg-purple-600 hover:bg-purple-700"
+                  : "bg-purple-60 hover:bg-purple-70"
               } 
               text-white font-medium
               disabled:opacity-50 disabled:cursor-not-allowed`}

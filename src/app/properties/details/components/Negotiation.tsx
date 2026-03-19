@@ -58,7 +58,7 @@ const Negotiation = () => {
                   <div className="lg:border-l border-t pt-5 lg:border-t-0 border-gray-15 lg:pl-5">
                     <p>Legal Fees</p>
                     <div className="flex items-center pt-3">
-                      <span className="pr-4 font-semibold text-[20px]">
+                      <span className="pr-5.5 font-semibold text-[20px]">
                         $3,000
                       </span>
                       <p className="bg-gray-10 border border-gray-15 rounded-[28px] p-[6px_12px] lg:inline text-[14px]!">
